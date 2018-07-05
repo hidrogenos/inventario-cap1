@@ -20,3 +20,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('prueba', function(){
     return 'Hola mundo';
 });
+
+
+Route::get('usuarios', function(){
+    return \App\Usuario::all();
+});
