@@ -25,3 +25,7 @@ Route::get('prueba', function(){
 Route::get('usuarios', function(){
     return \App\Usuario::all();
 });
+
+Route::get('productos', function(){
+    return \App\Producto::all();
+});
