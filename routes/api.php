@@ -29,3 +29,6 @@ Route::get('usuarios', function(){
 Route::get('productos', function(){
     return \App\producto::all();
 });
+
+
+
