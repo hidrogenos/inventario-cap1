@@ -17,14 +17,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('prueba', function(){
-    return 'Hola mundo';
-});
 
+// rutas estandar
+Route::resource('usuarios', 'ResourceControllers\UsuarioController');
 
-Route::get('usuarios', function(){
-    return \App\Usuario::all();
-});
 
 Route::get('productos', function(){
     return \App\Producto::all();
